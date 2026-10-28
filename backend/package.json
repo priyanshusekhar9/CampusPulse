@@ -1,0 +1,25 @@
+{
+  "name": "campus-pulse-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "msnodesqlv8": "^6.2.1",
+    "mssql": "^11.0.1",
+    "multer": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "allowScripts": {
+    "msnodesqlv8@6.2.1": true
+  }
+}
