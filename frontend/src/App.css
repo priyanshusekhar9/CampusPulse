@@ -1043,3 +1043,319 @@ a {
     font-size: 0.8rem;
   }
 }
+/* Upcoming and Past Event Tabs */
+
+.event-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.event-tab {
+  padding: 11px 22px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.event-tab:hover {
+  border-color: #635bff;
+  color: #635bff;
+}
+
+.event-tab.active {
+  background: #635bff;
+  color: white;
+  border-color: #635bff;
+}
+
+.event-tab:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.event-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.event-tab {
+  padding: 11px 22px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.event-tab:hover {
+  border-color: #635bff;
+  color: #635bff;
+}
+
+.event-tab.active {
+  background: #635bff;
+  color: white;
+  border-color: #635bff;
+}
+
+.duplicate-registration-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.duplicate-registration-message button {
+  padding: 9px 16px;
+  border: 1px solid #16a36a;
+  border-radius: 8px;
+  background: white;
+  color: #168653;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.duplicate-registration-message button:hover {
+  background: #eaf8f0;
+}
+/* ADMIN NAVIGATION TABS */
+
+.admin-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.admin-tabs button {
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  color: #333;
+  font-weight: 600;
+}
+
+.admin-tabs button.active {
+  background: #5b43d6;
+  color: white;
+  border-color: #5b43d6;
+}
+
+.admin-tabs button:hover {
+  border-color: #5b43d6;
+}
+
+/* EVENT CARDS */
+
+.manage-event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.manage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.manage-event {
+  align-items: center;
+}
+
+.thumbnail-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  color: #666;
+  min-height: 100px;
+}
+
+/* POSTER UPLOAD */
+
+.upload-button {
+  cursor: pointer;
+}
+
+.upload-button input {
+  display: none;
+}
+
+/* FULL WIDTH FORM FIELDS */
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* ATTENDEE TABLE */
+
+.attendee-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.attendee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendee-table th,
+.attendee-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .admin-tabs {
+    flex-direction: column;
+  }
+
+  .admin-tabs button {
+    width: 100%;
+  }
+
+  .manage-event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .manage-actions {
+    width: 100%;
+  }
+
+  .manage-actions button {
+    flex: 1;
+  }
+}
+/* ADMIN TABS */
+
+.admin-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.admin-tabs button {
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  color: #333;
+  font-weight: 600;
+}
+
+.admin-tabs button.active {
+  background: #5b43d6;
+  color: white;
+  border-color: #5b43d6;
+}
+
+.admin-tabs button:hover {
+  border-color: #5b43d6;
+}
+
+/* EVENT CARDS */
+
+.manage-event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.manage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.manage-event {
+  align-items: center;
+}
+
+.thumbnail-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  color: #666;
+  min-height: 100px;
+}
+
+/* POSTER UPLOAD */
+
+.upload-button {
+  cursor: pointer;
+}
+
+.upload-button input {
+  display: none;
+}
+
+/* FULL WIDTH */
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* TABLE */
+
+.attendee-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.attendee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendee-table th,
+.attendee-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .admin-tabs {
+    flex-direction: column;
+  }
+
+  .admin-tabs button {
+    width: 100%;
+  }
+
+  .manage-event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .manage-actions {
+    width: 100%;
+  }
+
+  .manage-actions button {
+    flex: 1;
+  }
+}
