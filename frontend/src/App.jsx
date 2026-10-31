@@ -1,9 +1,11 @@
-
 import { useEffect, useState } from "react";
 import "./App.css";
 import AdminDashboard from "./components/AdminDashboard";
 
-const API = "http://localhost:3000";
+// Production backend URL from Render; localhost is used only for local development.
+const API = (
+  import.meta.env.VITE_API_URL || "http://localhost:3000"
+).replace(/\/$/, "");
 
 function App() {
   const [page, setPage] = useState("home");
@@ -1010,8 +1012,6 @@ function EventList({ api, student, onLogin }) {
     </div>
   );
 }
-
-
 // MY REGISTRATIONS AND STUDENT PROFILE
 
 function MyRegistrations({ api, student, onBack }) {
